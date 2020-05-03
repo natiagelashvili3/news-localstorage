@@ -58,3 +58,17 @@ function setNewsStyle() {
 document.addEventListener('DOMContentLoaded', function() {
     setNewsStyle();
 });
+
+
+
+document.getElementById('book-visit-modal-open').addEventListener('click', function() {
+    let modal = document.getElementById('book-visit-modal');
+    modal.style.visibility = 'visible';
+    modal.style.opacity = 1;
+});
+
+document.getElementById('book-visit-modal-close').addEventListener('click', function() {
+    let modal = document.getElementById('book-visit-modal');
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = 0;
+});
