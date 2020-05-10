@@ -213,7 +213,7 @@ nav .burger-menu span{
 /* Book a visit content start */
 
 .book-visit-cointainer{
-    margin-bottom: 500px;
+    margin-bottom: 120px;
     margin-top: 60px;
     height: 300px;
     background-image: url('../images/book-visit.jpg');
@@ -307,6 +307,41 @@ nav .burger-menu span{
 
 /* Book a visit content end */
 
+
+
+/* Statistics Section Start */
+
+.statistics{
+    margin-bottom: 120px;
+}
+.statistics-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.statistics-content .cnt{
+    text-align: center;
+}
+.statistics-content span{
+    font-size: 60px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #273c75;
+}
+.statistics-content h3{
+    font-size: 16px;
+    border-top: 1px solid #d7d7d7;
+    padding: 15px 30px 0;
+}
+
+/* Statistics Section End */
+
+footer{
+    background: #273c75;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
 
 
 @media (max-width: 1199px){

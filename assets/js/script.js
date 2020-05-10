@@ -72,3 +72,50 @@ document.getElementById('book-visit-modal-close').addEventListener('click', func
     modal.style.visibility = 'hidden';
     modal.style.opacity = 0;
 });
+
+
+
+
+function createStatistics(obj) {
+    var max = obj.getAttribute('data-number')
+    var spanEl = obj.querySelector('span');
+    var k = 0;
+    
+    var interval = setInterval(function() {
+
+        if(k == max) {
+            clearInterval(interval);
+        } else {
+            var val = spanEl.innerText;
+            spanEl.innerText = parseInt(val) + 1;
+            k++;
+        }
+       
+    }, 20);
+    
+
+}
+
+function startCount() {
+    var statistics = document.getElementsByClassName('cnt');
+    for (let i = 0; i < statistics.length; i++) {
+        createStatistics(statistics[i]);
+    }
+}
+
+
+
+
+var statisticsDiv = document.getElementById('statistics');
+var visible = false;
+document.addEventListener('scroll', function() {
+    var position = statisticsDiv.getBoundingClientRect()
+    var windowHeight = window.innerHeight;
+    
+    if(position.top <= windowHeight) {
+        if(visible == false) {
+            startCount();
+        }
+        visible = true;
+    }
+});
