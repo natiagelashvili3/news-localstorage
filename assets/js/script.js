@@ -119,3 +119,6 @@ document.addEventListener('scroll', function() {
         visible = true;
     }
 });
+
+
+
