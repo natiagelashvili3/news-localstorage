@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
@@ -44,26 +46,8 @@
     </header>
 
     <main>
-        <section class="intro">
-            <div class="intro-video">
-                <div class="video">
-                    <video loop="" autoplay="" muted="" id="mainVideo">
-                        <source src="assets/images/video.mp4" type="">
-                    </video>
-                </div>
-            </div>
-            <div class="container">
-                <div class="intro-content">
-                    <h1>Build our city</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nihil eum quo enim obcaecati incidunt, veritatis distinctio sint iure doloremque iste minus error dolor mollitia quae deleniti nam consequatur blanditiis?</p>
-                    <a href="#">View More</a>
-                </div>
-            </div>
-            <div class="shadow"></div>
-        </section>
 
-
-        <section class="new">
+        <section class="new" id="news">
             <div class="container">
                 <div class="news-header">
                     <h2>News</h2>
@@ -73,6 +57,9 @@
                         </span>
                         <span id="grid" class="active">
                             <i class="fas fa-border-all"></i>
+                        </span>
+                        <span>
+                            <input type="text" id="news-datepicker">
                         </span>
                     </div>
                 </div>
@@ -119,35 +106,6 @@
             </div>
         </section>
 
-        <section class="book-visit-cointainer">
-            <div class="container">
-                <div class="book-visit-content">
-                    <h2 id="heding-visit">Book Visit</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit veritatis quidem distinctio fuga placeat quisquam ad. Quia sapiente voluptate atque amet id, commodi in qui vitae iusto. Delectus, placeat tenetur.</p>
-                    <button class="btn-default" id="book-visit-modal-open">Book a visit</button>
-                </div>
-            </div>
-            <div class="shadow"></div>
-        </section>
-
-        <section class="statistics" id="statistics">
-            <div class="container">
-                <div class="statistics-content">
-                    <div class="cnt" data-number="150">
-                        <span>0</span>
-                        <h3>Projects</h3>
-                    </div>
-                    <div class="cnt" data-number="50">
-                        <span>0</span>
-                        <h3>Companies</h3>
-                    </div>
-                    <div class="cnt" data-number="100">
-                        <span>0</span>
-                        <h3>Current Projects</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -157,32 +115,11 @@
             </div>
         </div>
     </footer>
-    
 
-    <div class="book-visit-modal" id="book-visit-modal">
-        <div class="book-visit-modal-container">
-            <div class="box-visit-modal-content">
-                <h2>Book a visit</h2>
-                <form action="">
-                    <div class="form-group">
-                        <label for="">Name</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Phone</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn-default">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <span id="book-visit-modal-close"><i class="fas fa-times"></i></span>
-        </div>
-    </div>
 
     <script src="assets/js/libs/jquery.js"></script>
+    <script src="assets/js/libs/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
-    
+
 </body>
 </html>

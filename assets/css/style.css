@@ -83,6 +83,14 @@ nav .burger-menu span{
 .resp-menu.active{
     transform: translateX(0%);
 }
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.menu li a:hover{
+    border-bottom: 1px solid white;
+}
 
 
 
@@ -136,10 +144,6 @@ nav .burger-menu span{
     text-align: center;
     padding-top: 20%;
 }
-
-
-
-
 
 
 @keyframes myAnimation {
@@ -459,3 +463,57 @@ footer{
         padding: 0 15px;
     }
 } 
+
+.ui-widget-header{
+    border: 1px solid #273c75;
+    background: #273c75;
+    color: #ffffff;
+}
+
+.swiper-inner-connent{
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-inner-connent .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.swiper-inner-text{
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    width: 60%;
+    z-index: 2;
+    color: white;
+}
+.swiper-inner-text p{
+    font-size: 33px;
+}
+
+.swiper-inner-text a{
+    display: inline-block;
+    margin-top: 20px;
+}
+.about-swiper-container{
+    position: relative;
+}
+.swiper-pagination-bullet{
+    background-color: white;
+    width: 18px;
+    height: 18px;
+}
+.about-slider {
+    margin-bottom: 200px;
+}
+.about-slider .swiper-wrapper{
+    height: calc(100vh - 70px);
+}
